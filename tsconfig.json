@@ -1,3 +1,75 @@
 {
-  "extends": "@tsconfig/react-native/tsconfig.json"
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "esnext",
+    "module": "commonjs",
+    "lib": [
+      "es5",
+      "es6",
+      "es7",
+      "esnext"
+    ],
+    "allowJs": true,
+    // "checkJs": true,
+    "jsx": "react-native",
+    // "declaration": true,
+    // "sourceMap": true,
+    // "outFile": "./",
+    // "outDir": "./",
+    // "rootDir": "./",
+    // "removeComments": true,
+    "noEmit": true,
+    // "incremental": true,
+    // "importHelpers": true,
+    // "downlevelIteration": true,
+    "isolatedModules": true,
+    /* Strict Type-Checking Options */
+    "strict": true,
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    /* Additional Checks */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    /* Module Resolution Options */
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "baseUrl": "./",
+    "paths": {
+      // "@/*": [
+      //   "./src/*"
+      // ],
+      // "types/*": [
+      //   "./@types/*"
+      // ]
+    },
+    // "rootDirs": [],
+    "typeRoots": [
+      "src/types/**",
+      "node_modules/@types/"
+    ],
+    "types": [
+      "react-native",
+      "jest",
+      "node"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    // "preserveSymlinks": true,
+    "skipLibCheck": false
+    /* Source Map Options */
+    // "sourceRoot": "./",
+    // "mapRoot": "./",
+    // "inlineSourceMap": true,
+    // "inlineSources": true,
+    /* Experimental Options */
+    // "experimentalDecorators": true,
+    // "emitDecoratorMetadata": true,
+  }
 }
