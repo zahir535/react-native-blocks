@@ -18,6 +18,7 @@
     "ios:13": "react-native run-ios --simulator=\"iPhone 13\""
   },
   "dependencies": {
+    "@react-native-community/netinfo": "11.3.1",
     "@react-navigation/native": "6.1.17",
     "@react-navigation/native-stack": "6.9.26",
     "react": "18.2.0",
