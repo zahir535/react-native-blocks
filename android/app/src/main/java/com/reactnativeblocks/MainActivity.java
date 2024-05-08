@@ -5,7 +5,18 @@ import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint;
 import com.facebook.react.defaults.DefaultReactActivityDelegate;
 
+//  Additional setup for react-native-screens to work properly in Android devices
+import android.os.Bundle;
+
 public class MainActivity extends ReactActivity {
+
+  /**
+   * Additional setup for react-native-screens to work properly in Android devices
+   */
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(null);
+  }
 
   /**
    * Returns the name of the main component registered from JavaScript. This is used to schedule
