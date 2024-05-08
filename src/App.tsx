@@ -2,8 +2,9 @@ import React from "react";
 import { SafeAreaView, StatusBar, useColorScheme } from "react-native";
 
 import { Colors } from "react-native/Libraries/NewAppScreen";
-import { BasePage } from "./page";
 import { flexChild } from "./styles";
+import { NavigationContainer } from "@react-navigation/native";
+import { RootNavigator } from "./navigation";
 
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === "dark";
@@ -13,10 +14,12 @@ function App(): JSX.Element {
   };
 
   return (
-    <SafeAreaView style={flexChild}>
-      <StatusBar barStyle={isDarkMode ? "light-content" : "dark-content"} backgroundColor={backgroundStyle.backgroundColor} />
-      <BasePage />
-    </SafeAreaView>
+    <NavigationContainer>
+      <SafeAreaView style={flexChild}>
+        <StatusBar barStyle={isDarkMode ? "light-content" : "dark-content"} backgroundColor={backgroundStyle.backgroundColor} />
+        <RootNavigator />
+      </SafeAreaView>
+    </NavigationContainer>
   );
 }
 
