@@ -15,7 +15,11 @@
     "clean:modules": "rm -rf node_modules && yarn",
     "install:pods": "cd ios && pod install",
     "remove:ios:build": "cd ios && rm -rf build",
-    "ios:13": "react-native run-ios --simulator=\"iPhone 13\""
+    "ios:13": "react-native run-ios --simulator=\"iPhone 13\"",
+    "bump-patch": "npm version patch --no-git-tag-version && bundle exec fastlane bump",
+    "bump-minor": "npm version minor --no-git-tag-version && bundle exec fastlane bump",
+    "bump-major": "npm version major --no-git-tag-version && bundle exec fastlane bump",
+    "bump-manual": "bundle exec fastlane bump"
   },
   "dependencies": {
     "@react-navigation/native": "6.1.17",
