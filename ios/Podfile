@@ -28,6 +28,9 @@ end
 target 'reactNativeBlocks' do
   config = use_native_modules!
 
+  use_frameworks! :linkage => :static
+  $RNFirebaseAsStaticFramework = true
+
   # Flags change depending on the env values.
   flags = get_default_flags()
 
