@@ -1,0 +1,12 @@
+diff --git a/node_modules/react-native-safe-area-context/src/SafeArea.types.ts b/node_modules/react-native-safe-area-context/src/SafeArea.types.ts
+index d3d23b6..a4a1cce 100644
+--- a/node_modules/react-native-safe-area-context/src/SafeArea.types.ts
++++ b/node_modules/react-native-safe-area-context/src/SafeArea.types.ts
+@@ -36,6 +36,7 @@ export interface NativeSafeAreaProviderProps extends ViewProps {
+   onInsetsChange: InsetChangeNativeCallback;
+ }
+ 
++// add some comments here. as an exmaple on patch directory and example
+ export interface NativeSafeAreaViewProps extends ViewProps {
+   children?: React.ReactNode;
+   mode?: 'padding' | 'margin';
